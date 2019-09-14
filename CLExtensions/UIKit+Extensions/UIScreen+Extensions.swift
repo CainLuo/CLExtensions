@@ -15,3 +15,17 @@ public func KScaleHorizontal(_ c: CGFloat) -> CGFloat {
 public func KScaleVertical(_ c: CGFloat) -> CGFloat {
     return UIScreen.main.bounds.width / 736 * c
 }
+
+extension UIScreen {
+    public var screenWidth: CGFloat {
+        return screenSize.width
+    }
+    
+    public var screenHeight: CGFloat {
+        return screenSize.height
+    }
+    
+    public var screenSize: CGSize {
+        return self.bounds.size
+    }
+}
