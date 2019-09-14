@@ -38,6 +38,7 @@ private func swizzle(_ vc: UIViewController.Type) {
 private var hasSwizzled = false
 
 extension UIViewController {
+    
     final public class func doBadSwizzleStuff() {
         guard !hasSwizzled else { return }
         
@@ -140,7 +141,20 @@ extension UIViewController {
 
 // MARK: - Storyboard Identifiable
 extension UIViewController {
+    
     public static var storyboardIdentifier: String {
         return String(describing: self)
+    }
+}
+
+// MARK: - Back Button
+extension UIViewController {
+    
+    public func setBackTitleEmpty() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
+    
+    public func hideBackButton() {
+        navigationItem.hidesBackButton = true
     }
 }
