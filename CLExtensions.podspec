@@ -14,8 +14,10 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author       = { "CainLuo" => "350116542@qq.com" }
   spec.platform     = :ios, '9.0'
+  spec.requires_arc = true
   spec.source       = { :git => "https://github.com/CainLuo/CLExtensions.git", :tag => "#{spec.version}" }
-  spec.source_files = "Extensions"
+  spec.source_files = "CLExtensions"
+  spec.frameworks   = 'UIKit', 'Foundation'
 
   spec.swift_versions = ['5.0', '5.1']
 end
