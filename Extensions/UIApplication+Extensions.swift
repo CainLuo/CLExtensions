@@ -13,7 +13,11 @@ extension UIApplication {
     public class func openSetting() {
         guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
         if UIApplication.shared.canOpenURL(settingsUrl) {
-            UIApplication.shared.open(settingsUrl, completionHandler: nil)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(settingsUrl, completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(settingsUrl)
+            }
         }
     }
 }
