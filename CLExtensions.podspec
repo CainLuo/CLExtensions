@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.author       = { "CainLuo" => "350116542@qq.com" }
   spec.platform     = :ios, '9.0'
   spec.source       = { :git => "https://github.com/CainLuo/CLExtensions.git", :tag => "#{spec.version}" }
-  spec.source_files = "Extensions/*.swift"
+  spec.source_files = "Extensions"
 
   spec.swift_versions = ['5.0', '5.1']
 end
