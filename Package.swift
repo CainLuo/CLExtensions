@@ -4,10 +4,7 @@
 import PackageDescription
 
 let package = Package(name: "CLExtensions",
-                      platforms: [.macOS(.v10_12),
-                                  .iOS(.v10),
-                                  .tvOS(.v10),
-                                  .watchOS(.v3)],
+                      platforms: [.iOS(.v10)],
                       products: [.library(name: "CLExtensions",
                                           targets: ["CLExtensions"])],
                       targets: [.target(name: "CLExtensions",
