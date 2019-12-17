@@ -8,26 +8,6 @@
 
 import UIKit
 
-public func fitScreen(value: CGFloat) -> CGFloat {
-    let width = Float(UIScreen.main.bounds.size.width)
-    let newValue: Float = Float((value / 2.0))
-    if UIDevice.current.model == "iPad" {
-        return CGFloat(ceilf(width / 834.0 * newValue))
-    } else {
-        return CGFloat(ceilf(width / 375.0  * newValue))
-    }
-}
-
-public func fitPlusScreen(value: CGFloat) -> CGFloat {
-    let width = Float(UIScreen.main.bounds.size.width)
-    let newValue: Float = Float((value / 2.0))
-    if UIDevice.current.model == "iPad" {
-        return CGFloat(ceilf(width / 834.0 * newValue))
-    } else {
-        return CGFloat(ceilf(width / 540.0  * newValue))
-    }
-}
-
 extension UIScreen {
     public var screenWidth: CGFloat {
         return screenSize.width
@@ -39,5 +19,25 @@ extension UIScreen {
     
     public var screenSize: CGSize {
         return self.bounds.size
+    }
+    
+    public static func fitScreen(value: CGFloat) -> CGFloat {
+        let width = Float(UIScreen.main.bounds.size.width)
+        let newValue: Float = Float((value / 2.0))
+        if UIDevice.current.model == "iPad" {
+            return CGFloat(ceilf(width / 834.0 * newValue))
+        } else {
+            return CGFloat(ceilf(width / 375.0  * newValue))
+        }
+    }
+
+    public static func fitPlusScreen(value: CGFloat) -> CGFloat {
+        let width = Float(UIScreen.main.bounds.size.width)
+        let newValue: Float = Float((value / 2.0))
+        if UIDevice.current.model == "iPad" {
+            return CGFloat(ceilf(width / 834.0 * newValue))
+        } else {
+            return CGFloat(ceilf(width / 540.0  * newValue))
+        }
     }
 }
