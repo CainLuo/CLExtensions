@@ -8,12 +8,24 @@
 
 import UIKit
 
-public func KScaleHorizontal(_ c: CGFloat) -> CGFloat {
-    return UIScreen.main.bounds.width / 414 * c
+public func fitScreen(value: CGFloat) -> CGFloat {
+    let width = Float(UIScreen.main.bounds.size.width)
+    let newValue: Float = Float((value / 2.0))
+    if UIDevice.current.model == "iPad" {
+        return CGFloat(ceilf(width / 834.0 * newValue))
+    } else {
+        return CGFloat(ceilf(width / 375.0  * newValue))
+    }
 }
 
-public func KScaleVertical(_ c: CGFloat) -> CGFloat {
-    return UIScreen.main.bounds.width / 736 * c
+public func fitPlusScreen(value: CGFloat) -> CGFloat {
+    let width = Float(UIScreen.main.bounds.size.width)
+    let newValue: Float = Float((value / 2.0))
+    if UIDevice.current.model == "iPad" {
+        return CGFloat(ceilf(width / 834.0 * newValue))
+    } else {
+        return CGFloat(ceilf(width / 540.0  * newValue))
+    }
 }
 
 extension UIScreen {
