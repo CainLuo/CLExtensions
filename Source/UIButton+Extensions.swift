@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class IBDesignableButton: UIButton {
+@IBDesignable open class IBDesignableButton: UIButton {
     
     @IBInspectable var borderColor: UIColor = .clear
     @IBInspectable var borderWidth: CGFloat = 1.0
