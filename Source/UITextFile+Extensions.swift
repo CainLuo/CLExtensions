@@ -76,3 +76,29 @@ extension UITextField {
         textField.text = String(prospectiveText.prefix(maxLength))
     }
 }
+
+extension UITextField {
+    @IBInspectable var fitFont: CGFloat {
+        set {
+            font = UIFont.systemFont(ofSize: UIScreen.fitScreen(value: newValue))
+        }
+        get {
+            if let pointSize = font?.pointSize {
+                return pointSize
+            }
+            return 17
+        }
+    }
+    
+    @IBInspectable var fitPlusFont: CGFloat {
+        set {
+            font = UIFont.systemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
+        }
+        get {
+            if let pointSize = font?.pointSize {
+                return pointSize
+            }
+            return 17
+        }
+    }
+}
