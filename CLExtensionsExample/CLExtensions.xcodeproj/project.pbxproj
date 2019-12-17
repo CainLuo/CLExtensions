@@ -33,6 +33,7 @@
 		BF9C942723A886C000AEC197 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C941323A886C000AEC197 /* UICollectionView+Extensions.swift */; };
 		BF9C942923A88E0C00AEC197 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C942823A88E0C00AEC197 /* UIColor+Extensions.swift */; };
 		BFF606AF23A8E782006A5C74 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF606AE23A8E782006A5C74 /* UITextView+Extensions.swift */; };
+		BFF606B123A8F4B3006A5C74 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF606B023A8F4B3006A5C74 /* UIStackView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		BF9C941323A886C000AEC197 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		BF9C942823A88E0C00AEC197 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		BFF606AE23A8E782006A5C74 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		BFF606B023A8F4B3006A5C74 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				BF9C940B23A886C000AEC197 /* UINavigationController+Extensions.swift */,
 				BF9C940F23A886C000AEC197 /* UINib+Extensions.swift */,
 				BF9C940923A886C000AEC197 /* UIScreen+Extensions.swift */,
+				BFF606B023A8F4B3006A5C74 /* UIStackView+Extensions.swift */,
 				BF9C940C23A886C000AEC197 /* UITableView+Extensions.swift */,
 				BF9C940823A886C000AEC197 /* UITextFile+Extensions.swift */,
 				BFF606AE23A8E782006A5C74 /* UITextView+Extensions.swift */,
@@ -218,6 +221,7 @@
 				BF770093232C715C0061444B /* ViewController.swift in Sources */,
 				BF9C941723A886C000AEC197 /* UIButton+Extensions.swift in Sources */,
 				BF9C941523A886C000AEC197 /* Int+Extensions.swift in Sources */,
+				BFF606B123A8F4B3006A5C74 /* UIStackView+Extensions.swift in Sources */,
 				BF9C942523A886C000AEC197 /* Collection+Extensions.swift in Sources */,
 				BF9C942123A886C000AEC197 /* Dictionary+Extensions.swift in Sources */,
 				BF9C941923A886C000AEC197 /* String+Extensions.swift in Sources */,
