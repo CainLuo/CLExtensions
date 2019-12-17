@@ -34,6 +34,7 @@
 		BF9C942923A88E0C00AEC197 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9C942823A88E0C00AEC197 /* UIColor+Extensions.swift */; };
 		BFF606AF23A8E782006A5C74 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF606AE23A8E782006A5C74 /* UITextView+Extensions.swift */; };
 		BFF606B123A8F4B3006A5C74 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF606B023A8F4B3006A5C74 /* UIStackView+Extensions.swift */; };
+		BFF606B323A8F61A006A5C74 /* CLExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BFF606B223A8F61A006A5C74 /* CLExtensions.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		BF9C942823A88E0C00AEC197 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		BFF606AE23A8E782006A5C74 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
 		BFF606B023A8F4B3006A5C74 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		BFF606B223A8F61A006A5C74 /* CLExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = CLExtensions.podspec; path = ../../CLExtensions.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		BF77008F232C715C0061444B /* CLExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				BFF606B223A8F61A006A5C74 /* CLExtensions.podspec */,
 				BF9C93FE23A886C000AEC197 /* Source */,
 				BF770090232C715C0061444B /* AppDelegate.swift */,
 				BF770092232C715C0061444B /* ViewController.swift */,
@@ -202,6 +205,7 @@
 				BF77009B232C71610061444B /* LaunchScreen.storyboard in Resources */,
 				BF770098232C71610061444B /* Assets.xcassets in Resources */,
 				BF770096232C715C0061444B /* Main.storyboard in Resources */,
+				BFF606B323A8F61A006A5C74 /* CLExtensions.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
