@@ -13,7 +13,7 @@ private var fitFontSizeKey = 300
 public extension UILabel {
     @IBInspectable var fitFontSize: CGFloat {
         set {
-            font = UIFont(name: font.fontName, size: fitScreen(value: fitFontSize))
+            font = UIFont(name: font.fontName, size: UIScreen.fitScreen(value: fitFontSize))
             objc_setAssociatedObject(self, &fitFontSizeKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
         get {
@@ -26,7 +26,7 @@ public extension UILabel {
     
     @IBInspectable var fitPlusFontSize: CGFloat {
         set {
-            font = UIFont(name: font.fontName, size: fitPlusScreen(value: fitFontSize))
+            font = UIFont(name: font.fontName, size: UIScreen.fitPlusScreen(value: fitFontSize))
             objc_setAssociatedObject(self, &fitFontSizeKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
         get {
