@@ -15,7 +15,7 @@ public extension NSLayoutConstraint {
 
     @IBInspectable var verticalConstant: CGFloat {
         set {
-            constant = fitScreen(value: verticalConstant)
+            constant = UIScreen.fitScreen(value: verticalConstant)
             objc_setAssociatedObject(self, &verticalKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
         get {
@@ -28,7 +28,7 @@ public extension NSLayoutConstraint {
     
     @IBInspectable var horizontalConstant: CGFloat {
         set {
-            constant = fitScreen(value: horizontalConstant)
+            constant = UIScreen.fitScreen(value: horizontalConstant)
             objc_setAssociatedObject(self, &horizontalKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
         get {
@@ -41,7 +41,7 @@ public extension NSLayoutConstraint {
     
     @IBInspectable var verticalPlusConstant: CGFloat {
         set {
-            constant = fitPlusScreen(value: verticalConstant)
+            constant = UIScreen.fitPlusScreen(value: verticalConstant)
             objc_setAssociatedObject(self, &verticalKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
         get {
@@ -54,7 +54,7 @@ public extension NSLayoutConstraint {
     
     @IBInspectable var horizontalPlusConstant: CGFloat {
         set {
-            constant = fitPlusScreen(value: horizontalConstant)
+            constant = UIScreen.fitPlusScreen(value: horizontalConstant)
             objc_setAssociatedObject(self, &horizontalKey, newValue, .OBJC_ASSOCIATION_ASSIGN)
         }
         get {
