@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class IBDesignableView: UIView {
+@IBDesignable open class IBDesignableView: UIView {
     @IBInspectable var cornerRadius: CGFloat = 0.0
     @IBInspectable var borderColor: UIColor = .clear
     @IBInspectable var borderWidth: CGFloat = 0.0
