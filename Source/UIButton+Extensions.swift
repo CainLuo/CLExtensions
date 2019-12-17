@@ -32,4 +32,28 @@ import UIKit
         
         super.draw(rect)
     }
+    
+    @IBInspectable var fitFont: CGFloat {
+        set {
+            titleLabel?.font = UIFont.systemFont(ofSize: UIScreen.fitScreen(value: newValue))
+        }
+        get {
+            if let pointSize = titleLabel?.font.pointSize {
+                return pointSize
+            }
+            return 17
+        }
+    }
+    
+    @IBInspectable var fitPlusFont: CGFloat {
+        set {
+            titleLabel?.font = UIFont.systemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
+        }
+        get {
+            if let pointSize = titleLabel?.font.pointSize {
+                return pointSize
+            }
+            return 17
+        }
+    }
 }
