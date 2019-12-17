@@ -6,9 +6,9 @@
 #  To see working Podss in the CocoaPods repo see https://github.com/CocoaPods/ss/
 #
 
-Pod::s.new do |s|
+Pod::Spec.new do |s|
   s.name     = "CLExtensions"
-  s.version  = "1.0.2"
+  s.version  = "1.0.3"
   s.summary  = "iOS of CLExtensions."
   s.homepage = "https://github.com/CainLuo/CLExtensions"
   s.license  = { :type => "MIT", :file => "LICENSE" }
