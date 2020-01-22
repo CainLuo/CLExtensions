@@ -78,27 +78,39 @@ extension UITextField {
 }
 
 extension UITextField {
-    @IBInspectable var fitFont: CGFloat {
+    @IBInspectable public var fitFont: CGFloat {
         set {
             font = UIFont.systemFont(ofSize: UIScreen.fitScreen(value: newValue))
         }
         get {
-            if let pointSize = font?.pointSize {
-                return pointSize
-            }
-            return 17
+            return font?.pointSize ?? 17
         }
     }
     
-    @IBInspectable var fitPlusFont: CGFloat {
+    @IBInspectable public var fitPlusFont: CGFloat {
         set {
             font = UIFont.systemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
         }
         get {
-            if let pointSize = font?.pointSize {
-                return pointSize
-            }
-            return 17
+            return font?.pointSize ?? 17
+        }
+    }
+    
+    @IBInspectable public var fitBoldFont: CGFloat {
+        set {
+            font = UIFont.boldSystemFont(ofSize: UIScreen.fitScreen(value: newValue))
+        }
+        get {
+            return font?.pointSize ?? 17
+        }
+    }
+    
+    @IBInspectable public var fitPlusBoldFont: CGFloat {
+        set {
+            font = UIFont.boldSystemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
+        }
+        get {
+            return font?.pointSize ?? 17
         }
     }
 }
