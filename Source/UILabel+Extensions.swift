@@ -8,8 +8,8 @@
 
 import UIKit
 
-public extension UILabel {
-    @IBInspectable var fitFont: CGFloat {
+extension UILabel {
+    @IBInspectable public var fitFont: CGFloat {
         set {
             font = UIFont.systemFont(ofSize: UIScreen.fitScreen(value: newValue))
         }
@@ -18,9 +18,27 @@ public extension UILabel {
         }
     }
     
-    @IBInspectable var fitPlusFont: CGFloat {
+    @IBInspectable public var fitPlusFont: CGFloat {
         set {
             font = UIFont.systemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
+        }
+        get {
+            return font.pointSize
+        }
+    }
+    
+    @IBInspectable public var fitBoldFont: CGFloat {
+        set {
+            font = UIFont.boldSystemFont(ofSize: UIScreen.fitScreen(value: newValue))
+        }
+        get {
+            return font.pointSize
+        }
+    }
+    
+    @IBInspectable public var fitPlusBoldFont: CGFloat {
+        set {
+            font = UIFont.boldSystemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
         }
         get {
             return font.pointSize
