@@ -9,7 +9,6 @@
 import UIKit
 
 extension UIApplication {
-    
     public class func openSetting() {
         guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
         if UIApplication.shared.canOpenURL(settingsUrl) {
@@ -17,6 +16,16 @@ extension UIApplication {
                 UIApplication.shared.open(settingsUrl, completionHandler: nil)
             } else {
                 UIApplication.shared.openURL(settingsUrl)
+            }
+        }
+    }
+    
+    public static func callPhoneNumber(phoneNumber: String) {
+        if let url = URL(string: "tel://\(phoneNumber)"), UIApplication.shared.canOpenURL(url) {
+            if #available(iOS 10, *) {
+                shared.open(url)
+            } else {
+                shared.openURL(url)
             }
         }
     }
