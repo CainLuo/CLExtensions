@@ -137,19 +137,44 @@ extension UIViewController {
         
         return alert
     }
+    
+    @discardableResult
+    public func showSheet(titles: [String]?, cancelTitle: String?, action: ((_ index: Int) -> Void)?, cancel: (() -> Void)?) -> UIAlertController {
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        if let titles = titles {
+            for title in titles {
+                alert.addAction(UIAlertAction(title: title, style: .default, handler: { (_) in
+                    action?(titles.firstIndex(of: title)!)
+                }))
+            }
+        }
+        
+        if let noTitle = cancelTitle {
+            alert.addAction(UIAlertAction(title: noTitle, style: .cancel, handler: { (_) in
+                cancel?()
+            }))
+        }
+                
+        present(alert, animated: true, completion: nil)
+        
+        return alert
+    }
 }
 
 // MARK: - Storyboard Identifiable
 extension UIViewController {
-    
     public static var storyboardIdentifier: String {
-        return String(describing: self)
+        return self.description().components(separatedBy: ".").dropFirst().joined(separator: ".")
+    }
+    
+    public static var defultNib: String {
+        return self.description().components(separatedBy: ".").dropFirst().joined(separator: ".")
     }
 }
 
 // MARK: - Back Button
 extension UIViewController {
-    
     public func setBackTitleEmpty() {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
