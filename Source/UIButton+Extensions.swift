@@ -12,11 +12,10 @@ import UIKit
     
     @IBInspectable var borderColor: UIColor = .clear
     @IBInspectable var borderWidth: CGFloat = 1.0
-    @IBInspectable var cornerRadius: CGFloat = 8.0
+    @IBInspectable var cornerRadius: CGFloat = 0.0
     @IBInspectable var leftPadding: CGFloat = 0.0
     @IBInspectable var rightPadding: CGFloat = 0.0
     @IBInspectable var titleLines: Int = 1
-    
     
     public override func draw(_ rect: CGRect) {
         layer.borderColor = borderColor.cgColor
@@ -33,27 +32,68 @@ import UIKit
         super.draw(rect)
     }
     
-    @IBInspectable var fitFont: CGFloat {
+    @IBInspectable var commitColor: UIColor = UIColor.black
+    @IBInspectable var disableColor: UIColor = UIColor.gray
+    @IBInspectable var canSubmit: Bool = false {
+        didSet {
+            isEnabled = canSubmit
+            backgroundColor = canSubmit ? commitColor : disableColor
+        }
+    }
+}
+
+extension UIButton {
+    @IBInspectable public var fitFont: CGFloat {
         set {
             titleLabel?.font = UIFont.systemFont(ofSize: UIScreen.fitScreen(value: newValue))
         }
         get {
-            if let pointSize = titleLabel?.font.pointSize {
-                return pointSize
-            }
-            return 17
+            return titleLabel?.font.pointSize ?? 17
         }
     }
     
-    @IBInspectable var fitPlusFont: CGFloat {
+    @IBInspectable public var fitPlusFont: CGFloat {
         set {
             titleLabel?.font = UIFont.systemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
         }
         get {
-            if let pointSize = titleLabel?.font.pointSize {
-                return pointSize
-            }
-            return 17
+            return titleLabel?.font.pointSize ?? 17
+        }
+    }
+    
+    @IBInspectable public var fitBoldFont: CGFloat {
+        set {
+            titleLabel?.font = UIFont.boldSystemFont(ofSize: UIScreen.fitScreen(value: newValue))
+        }
+        get {
+            return titleLabel?.font.pointSize ?? 17
+        }
+    }
+    
+    @IBInspectable public var fitPlusBoldFont: CGFloat {
+        set {
+            titleLabel?.font = UIFont.boldSystemFont(ofSize: UIScreen.fitPlusScreen(value: newValue))
+        }
+        get {
+            return titleLabel?.font.pointSize ?? 17
+        }
+    }
+    
+    @IBInspectable public var numberOfLines: Int {
+        set {
+            titleLabel?.numberOfLines = newValue
+        }
+        get {
+            return self.titleLabel?.numberOfLines ?? 1
+        }
+    }
+    
+    @IBInspectable public var adjustsFontSizeToFitWidth: Bool {
+        set {
+            titleLabel?.adjustsFontSizeToFitWidth = newValue
+        }
+        get {
+            return self.titleLabel?.adjustsFontSizeToFitWidth ?? false
         }
     }
 }
