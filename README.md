@@ -42,5 +42,8 @@ git clone https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git master
 
 ```Ruby
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
 ```
 
