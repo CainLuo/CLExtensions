@@ -12,6 +12,8 @@ platform :ios, '10.0'
 use_frameworks!
 
 pod 'CLExtensions'
+or
+pod 'CLExtensions', :git => 'https://github.com/CainLuo/CLExtensions.git'
 ```
 
 如果您是在国内, 没法使用cdn, 那么可以参考下面的方式.
