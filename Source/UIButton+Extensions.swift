@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable open class IBDesignableButton: UIButton {
     
     @IBInspectable var borderColor: UIColor = .clear
-    @IBInspectable var borderWidth: CGFloat = 1.0
+    @IBInspectable var borderWidth: CGFloat = 0.0
     @IBInspectable var cornerRadius: CGFloat = 0.0
     @IBInspectable var leftPadding: CGFloat = 0.0
     @IBInspectable var rightPadding: CGFloat = 0.0
