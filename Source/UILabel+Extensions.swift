@@ -20,7 +20,7 @@ import UIKit
                                   width: UIScreen.fitPlusScreen(value: 50),
                                   height: UIScreen.fitPlusScreen(value: 50))
 
-            attributedText = NSMutableAttributedString.drawImageInAttributedString(content: text.localized(),
+            attributedText = NSMutableAttributedString.drawImageInAttributedString(content: text,
                                                                                    image: tipsImage,
                                                                                    bounds: iconRect,
                                                                                    isPrefix: isPrefix)
