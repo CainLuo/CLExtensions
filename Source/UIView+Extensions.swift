@@ -51,6 +51,15 @@ private func swizzle(_ v: UIView.Type) {
 private var hasSwizzled = false
 
 extension UIView {
+    @IBInspectable public var layoutImage: UIImage {
+        set {
+            layer.contents = newValue.cgImage
+        }
+        get {
+            return layer.contents as! UIImage
+        }
+    }
+
     final public class func doBadSwizzleStuff() {
         guard !hasSwizzled else { return }
         
