@@ -29,6 +29,11 @@
 		BF663A4A233DBE9A0049B4CF /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF663A35233DBE9A0049B4CF /* Collection+Extensions.swift */; };
 		BF663A4B233DBE9A0049B4CF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF663A36233DBE9A0049B4CF /* Info.plist */; };
 		BF663A4C233DBE9A0049B4CF /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF663A37233DBE9A0049B4CF /* UICollectionView+Extensions.swift */; };
+		BFDBE9B323E800E7008C17F0 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE9B223E800E6008C17F0 /* UITextView+Extensions.swift */; };
+		BFDBE9B723E80133008C17F0 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE9B423E80133008C17F0 /* UIImage+Extensions.swift */; };
+		BFDBE9B823E80133008C17F0 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE9B523E80133008C17F0 /* UIColor+Extensions.swift */; };
+		BFDBE9B923E80133008C17F0 /* UIStackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE9B623E80133008C17F0 /* UIStackView+Extensions.swift */; };
+		BFDBE9BB23E80162008C17F0 /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDBE9BA23E80162008C17F0 /* NSMutableAttributedString+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		BF663A35233DBE9A0049B4CF /* Collection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		BF663A36233DBE9A0049B4CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF663A37233DBE9A0049B4CF /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		BFDBE9B223E800E6008C17F0 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		BFDBE9B423E80133008C17F0 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		BFDBE9B523E80133008C17F0 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		BFDBE9B623E80133008C17F0 /* UIStackView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extensions.swift"; sourceTree = "<group>"; };
+		BFDBE9BA23E80162008C17F0 /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,25 +126,30 @@
 		BF663A4E233DBEA90049B4CF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				BF663A28233DBE9A0049B4CF /* UIView+Extensions.swift */,
-				BF663A29233DBE9A0049B4CF /* String+Extensions.swift */,
-				BF663A2A233DBE9A0049B4CF /* UIDevice+Extensions.swift */,
-				BF663A2B233DBE9A0049B4CF /* UIApplication+Extensions.swift */,
-				BF663A2C233DBE9A0049B4CF /* UITextFile+Extensions.swift */,
-				BF663A2D233DBE9A0049B4CF /* UIScreen+Extensions.swift */,
-				BF663A2E233DBE9A0049B4CF /* NSLayoutConstraint+Extensions.swift */,
-				BF663A2F233DBE9A0049B4CF /* UINavigationController+Extensions.swift */,
-				BF663A30233DBE9A0049B4CF /* UITableView+Extensions.swift */,
-				BF663A31233DBE9A0049B4CF /* Dictionary+Extensions.swift */,
-				BF663A32233DBE9A0049B4CF /* UILabel+Extensions.swift */,
-				BF663A33233DBE9A0049B4CF /* UINib+Extensions.swift */,
-				BF663A34233DBE9A0049B4CF /* Double+Extensions.swift */,
-				BF663A35233DBE9A0049B4CF /* Collection+Extensions.swift */,
-				BF663A37233DBE9A0049B4CF /* UICollectionView+Extensions.swift */,
 				BF663A23233DBE9A0049B4CF /* Array+Extensions.swift */,
+				BF663A35233DBE9A0049B4CF /* Collection+Extensions.swift */,
+				BF663A31233DBE9A0049B4CF /* Dictionary+Extensions.swift */,
+				BF663A34233DBE9A0049B4CF /* Double+Extensions.swift */,
 				BF663A24233DBE9A0049B4CF /* Int+Extensions.swift */,
-				BF663A25233DBE9A0049B4CF /* UIViewController+Extensions.swift */,
+				BF663A2E233DBE9A0049B4CF /* NSLayoutConstraint+Extensions.swift */,
+				BFDBE9BA23E80162008C17F0 /* NSMutableAttributedString+Extensions.swift */,
+				BF663A29233DBE9A0049B4CF /* String+Extensions.swift */,
+				BF663A2B233DBE9A0049B4CF /* UIApplication+Extensions.swift */,
 				BF663A26233DBE9A0049B4CF /* UIButton+Extensions.swift */,
+				BF663A37233DBE9A0049B4CF /* UICollectionView+Extensions.swift */,
+				BFDBE9B523E80133008C17F0 /* UIColor+Extensions.swift */,
+				BF663A2A233DBE9A0049B4CF /* UIDevice+Extensions.swift */,
+				BFDBE9B423E80133008C17F0 /* UIImage+Extensions.swift */,
+				BF663A32233DBE9A0049B4CF /* UILabel+Extensions.swift */,
+				BF663A2F233DBE9A0049B4CF /* UINavigationController+Extensions.swift */,
+				BF663A33233DBE9A0049B4CF /* UINib+Extensions.swift */,
+				BF663A2D233DBE9A0049B4CF /* UIScreen+Extensions.swift */,
+				BFDBE9B623E80133008C17F0 /* UIStackView+Extensions.swift */,
+				BF663A30233DBE9A0049B4CF /* UITableView+Extensions.swift */,
+				BF663A2C233DBE9A0049B4CF /* UITextFile+Extensions.swift */,
+				BFDBE9B223E800E6008C17F0 /* UITextView+Extensions.swift */,
+				BF663A28233DBE9A0049B4CF /* UIView+Extensions.swift */,
+				BF663A25233DBE9A0049B4CF /* UIViewController+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -224,20 +239,25 @@
 				BF663A4C233DBE9A0049B4CF /* UICollectionView+Extensions.swift in Sources */,
 				BF663A38233DBE9A0049B4CF /* Array+Extensions.swift in Sources */,
 				BF663A3B233DBE9A0049B4CF /* UIButton+Extensions.swift in Sources */,
+				BFDBE9B723E80133008C17F0 /* UIImage+Extensions.swift in Sources */,
 				BF663A3D233DBE9A0049B4CF /* UIView+Extensions.swift in Sources */,
 				BF663A48233DBE9A0049B4CF /* UINib+Extensions.swift in Sources */,
+				BFDBE9B923E80133008C17F0 /* UIStackView+Extensions.swift in Sources */,
 				BF663A46233DBE9A0049B4CF /* Dictionary+Extensions.swift in Sources */,
 				BF663A49233DBE9A0049B4CF /* Double+Extensions.swift in Sources */,
 				BF663A3A233DBE9A0049B4CF /* UIViewController+Extensions.swift in Sources */,
 				BF663A3E233DBE9A0049B4CF /* String+Extensions.swift in Sources */,
 				BF663A47233DBE9A0049B4CF /* UILabel+Extensions.swift in Sources */,
 				BF663A39233DBE9A0049B4CF /* Int+Extensions.swift in Sources */,
+				BFDBE9B323E800E7008C17F0 /* UITextView+Extensions.swift in Sources */,
 				BF663A40233DBE9A0049B4CF /* UIApplication+Extensions.swift in Sources */,
 				BF663A44233DBE9A0049B4CF /* UINavigationController+Extensions.swift in Sources */,
 				BF663A45233DBE9A0049B4CF /* UITableView+Extensions.swift in Sources */,
 				BF663A42233DBE9A0049B4CF /* UIScreen+Extensions.swift in Sources */,
+				BFDBE9BB23E80162008C17F0 /* NSMutableAttributedString+Extensions.swift in Sources */,
 				BF663A41233DBE9A0049B4CF /* UITextFile+Extensions.swift in Sources */,
 				BF663A3F233DBE9A0049B4CF /* UIDevice+Extensions.swift in Sources */,
+				BFDBE9B823E80133008C17F0 /* UIColor+Extensions.swift in Sources */,
 				BF663A43233DBE9A0049B4CF /* NSLayoutConstraint+Extensions.swift in Sources */,
 				BF663A4A233DBE9A0049B4CF /* Collection+Extensions.swift in Sources */,
 			);
@@ -385,7 +405,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIKit.CLExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -416,7 +436,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIKit.CLExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
