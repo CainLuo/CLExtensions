@@ -13,7 +13,7 @@ import UIKit
     @IBInspectable var tipsImage: UIImage = UIImage()
     @IBInspectable var isPrefix: Bool = true
 
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         if let text = text {
             let iconRect = CGRect(x: 0,
                                   y: UIScreen.fitPlusScreen(value: -8),
