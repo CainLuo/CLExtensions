@@ -10,12 +10,12 @@ import UIKit
 
 @IBDesignable open class IBDesignableButton: UIButton {
     
-    @IBInspectable var borderColor: UIColor = .clear
-    @IBInspectable var borderWidth: CGFloat = 0.0
-    @IBInspectable var cornerRadius: CGFloat = 0.0
-    @IBInspectable var leftPadding: CGFloat = 0.0
-    @IBInspectable var rightPadding: CGFloat = 0.0
-    @IBInspectable var titleLines: Int = 1
+    @IBInspectable public var borderColor: UIColor = .clear
+    @IBInspectable public var borderWidth: CGFloat = 0.0
+    @IBInspectable public var cornerRadius: CGFloat = 0.0
+    @IBInspectable public var leftPadding: CGFloat = 0.0
+    @IBInspectable public var rightPadding: CGFloat = 0.0
+    @IBInspectable public var titleLines: Int = 1
     
     public override func draw(_ rect: CGRect) {
         layer.borderColor = borderColor.cgColor
@@ -32,9 +32,9 @@ import UIKit
         super.draw(rect)
     }
     
-    @IBInspectable var commitColor: UIColor = UIColor.black
-    @IBInspectable var disableColor: UIColor = UIColor.gray
-    @IBInspectable var canSubmit: Bool = false {
+    @IBInspectable public var commitColor: UIColor = UIColor.black
+    @IBInspectable public var disableColor: UIColor = UIColor.gray
+    @IBInspectable public var canSubmit: Bool = false {
         didSet {
             isEnabled = canSubmit
             backgroundColor = canSubmit ? commitColor : disableColor
