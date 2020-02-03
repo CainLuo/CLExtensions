@@ -11,7 +11,7 @@ import Foundation
 private let formatter: NumberFormatter = NumberFormatter()
 
 extension Int {
-    private func formattedString(style: NumberFormatter.Style, localeIdentifier: String) -> String {
+    public func formattedString(style: NumberFormatter.Style, localeIdentifier: String) -> String {
         formatter.numberStyle = style
         formatter.locale = Locale(identifier: localeIdentifier)
         return formatter.string(from: self as NSNumber) ?? ""
@@ -33,5 +33,9 @@ extension Int {
         formatter.groupingSeparator = ","
         formatter.groupingSize = 3
         return formatter.string(from: self as NSNumber) ?? ""
+    }
+    
+    public func toString() -> String? {
+        return String(self)
     }
 }
