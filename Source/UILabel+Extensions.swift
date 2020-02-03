@@ -8,6 +8,28 @@
 
 import UIKit
 
+@IBDesignable open class IBDesignableLabel: UILabel {
+    
+    @IBInspectable var tipsImage: UIImage = UIImage()
+    @IBInspectable var isPrefix: Bool = true
+
+    override func draw(_ rect: CGRect) {
+        if let text = text {
+            let iconRect = CGRect(x: 0,
+                                  y: UIScreen.fitPlusScreen(value: -8),
+                                  width: UIScreen.fitPlusScreen(value: 50),
+                                  height: UIScreen.fitPlusScreen(value: 50))
+
+            attributedText = NSMutableAttributedString.drawImageInAttributedString(content: text.localized(),
+                                                                                   image: tipsImage,
+                                                                                   bounds: iconRect,
+                                                                                   isPrefix: isPrefix)
+        }
+        
+        super.draw(rect)
+    }
+}
+
 extension UILabel {
     @IBInspectable public var fitFont: CGFloat {
         set {
