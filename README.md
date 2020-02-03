@@ -25,17 +25,17 @@ CocoaPods 是一个 Cocoa 和 Cocoa Touch 框架的依赖管理器，具体原�
 对于旧版的 CocoaPods 可以使用如下方法使用 tuna 的镜像：
 
 ```Ruby
-$ pod repo remove master
-$ pod repo add master https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git
-$ pod repo update
+pod repo remove master
+pod repo add master https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git
+pod repo update
 ```
 
 新版的 CocoaPods 不允许用`pod repo add`直接添加master库了，但是依然可以：
 
 ```Ruby
-$ cd ~/.cocoapods/repos 
-$ pod repo remove master
-$ git clone https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git master
+cd ~/.cocoapods/repos 
+pod repo remove master
+git clone https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git master
 ```
 
 最后进入自己的工程，在自己工程的`podFile`第一行加上：
