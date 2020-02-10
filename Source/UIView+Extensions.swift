@@ -8,22 +8,6 @@
 
 import UIKit
 
-@IBDesignable open class IBDesignableView: UIView {
-    @IBInspectable var cornerRadius: CGFloat = 0.0
-    @IBInspectable var borderColor: UIColor = .clear
-    @IBInspectable var borderWidth: CGFloat = 0.0
-    
-    public override func draw(_ rect: CGRect) {
-        layer.cornerRadius = cornerRadius
-        clipsToBounds = (cornerRadius > 0)
-        
-        layer.borderColor = borderColor.cgColor
-        layer.borderWidth = borderWidth
-        
-        super.draw(rect)
-    }
-}
-
 private func swizzle(_ v: UIView.Type) {
     
     [(#selector(v.traitCollectionDidChange(_:)), #selector(v.ksr_traitCollectionDidChange(_:)))]
