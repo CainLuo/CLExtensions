@@ -1,0 +1,62 @@
+PODS:
+  - CLExtensions (1.1.0):
+    - CLExtensions/Localize (= 1.1.0)
+    - CLExtensions/Log (= 1.1.0)
+    - CLExtensions/Rx (= 1.1.0)
+  - CLExtensions/Localize (1.1.0):
+    - Localize-Swift
+  - CLExtensions/Log (1.1.0):
+    - XCGLogger
+  - CLExtensions/Rx (1.1.0):
+    - MJRefresh
+    - RxCocoa
+    - RxSwift
+  - Localize-Swift (3.1.0)
+  - MJRefresh (3.3.1)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - XCGLogger (7.0.1):
+    - XCGLogger/Core (= 7.0.1)
+  - XCGLogger/Core (7.0.1):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - CLExtensions (from `.`)
+  - CLExtensions/Localize (from `.`)
+  - CLExtensions/Log (from `.`)
+  - CLExtensions/Rx (from `.`)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Localize-Swift
+    - MJRefresh
+    - ObjcExceptionBridging
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - XCGLogger
+
+EXTERNAL SOURCES:
+  CLExtensions:
+    :path: "."
+
+SPEC CHECKSUMS:
+  CLExtensions: 712ba4e018873d6fa0ad33fbb431161196210548
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  XCGLogger: 1943831ef907df55108b0b18657953f868de973b
+
+PODFILE CHECKSUM: 109fd156eb818616ca76b89f2945476dccd92dec
+
+COCOAPODS: 1.8.4
