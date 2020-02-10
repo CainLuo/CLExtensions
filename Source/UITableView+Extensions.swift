@@ -9,6 +9,15 @@
 import UIKit
 
 extension UITableView {
+    @IBInspectable public var cellHeight: CGFloat {
+        set {
+            rowHeight = newValue
+        }
+        get {
+            return self.cellHeight
+        }
+    }
+    
     public func register(nibName: String, inBundle bundle: Bundle? = nil) {
         self.register(UINib(nibName: nibName, bundle: bundle),
                       forCellReuseIdentifier: nibName)
