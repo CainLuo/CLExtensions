@@ -11,10 +11,10 @@ import RxCocoa
 import RxSwift
 import CLExtensions
 
-//extension Reactive where Base: IBDesignableButton {
-//    public var canSubmit: Binder<Bool> {
-//        return Binder(self.base) { button, canSubmit in
-//            button.canSubmit = canSubmit
-//        }
-//    }
-//}
+extension Reactive where Base: IBDesignableButton {
+    public var canSubmit: Binder<Bool> {
+        return Binder(self.base) { button, canSubmit in
+            button.canSubmit = canSubmit
+        }
+    }
+}
