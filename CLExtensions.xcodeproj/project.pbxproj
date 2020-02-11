@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -145,11 +145,11 @@
 		BF1104BF23F18F4100245B3C /* CLExtensions+Rx */ = {
 			isa = PBXGroup;
 			children = (
-				BF1104C023F18F4100245B3C /* IBDesignableButton+Rx.swift */,
-				BF1104C123F18F4100245B3C /* Observable+Extension.swift */,
-				BF1104C223F18F4100245B3C /* ErrorTracker.swift */,
 				BF1104C323F18F4100245B3C /* ActivityIndicator.swift */,
+				BF1104C223F18F4100245B3C /* ErrorTracker.swift */,
+				BF1104C023F18F4100245B3C /* IBDesignableButton+Rx.swift */,
 				BF1104C423F18F4100245B3C /* MJRefresh+Rx.swift */,
+				BF1104C123F18F4100245B3C /* Observable+Extension.swift */,
 				BF1104C523F18F4100245B3C /* UIButton+Rx.swift */,
 				BF1104C623F18F4100245B3C /* UIViewController+Rx.swift */,
 			);
