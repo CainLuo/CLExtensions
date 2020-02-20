@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CLExtensions/CLExtensions.framework
+${BUILT_PRODUCTS_DIR}/CLExtensions+Localize/CLExtensions_Localize.framework
+${BUILT_PRODUCTS_DIR}/CLExtensions+Log/CLExtensions_Log.framework
+${BUILT_PRODUCTS_DIR}/CLExtensions+Rx/CLExtensions_Rx.framework
+${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework
+${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework
+${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework
+${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
+${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
+${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework

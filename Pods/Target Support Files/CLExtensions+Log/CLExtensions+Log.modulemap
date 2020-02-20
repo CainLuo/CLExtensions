@@ -1,0 +1,6 @@
+framework module CLExtensions_Log {
+  umbrella header "CLExtensions+Log-umbrella.h"
+
+  export *
+  module * { export * }
+}

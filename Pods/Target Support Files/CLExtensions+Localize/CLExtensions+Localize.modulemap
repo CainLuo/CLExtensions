@@ -1,0 +1,6 @@
+framework module CLExtensions_Localize {
+  umbrella header "CLExtensions+Localize-umbrella.h"
+
+  export *
+  module * { export * }
+}

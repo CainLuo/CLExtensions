@@ -1,0 +1,6 @@
+framework module CLExtensions_Rx {
+  umbrella header "CLExtensions+Rx-umbrella.h"
+
+  export *
+  module * { export * }
+}

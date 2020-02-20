@@ -5,8 +5,10 @@ inhibit_all_warnings!
 
 target 'Example' do
   pod "CLExtensions", :path => "."
-  pod "CLExtensions/Log", :path => "."
-  pod "CLExtensions/Rx", :path => "."
-  pod "CLExtensions/Localize", :path => "."
-
+  pod "CLExtensions+Log", :path => "."
+  pod "CLExtensions+Rx", :path => "."
+  pod "CLExtensions+Localize", :path => "."
+  
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end
