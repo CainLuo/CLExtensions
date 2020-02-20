@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name          = "CLExtensions+Localize"
-  s.version       = "1.1.0"
+  s.version       = "1.1.1"
   s.summary       = "Localize of CLExtensions."
   s.homepage      = "https://github.com/CainLuo/CLExtensions"
   s.license       = { :type => "MIT", :file => "LICENSE" }
