@@ -33,7 +33,10 @@ import UIKit
             backgroundColor = canSubmit ? commitColor : disableColor
         }
     }
-
+    
+    public var timer: DispatchSourceTimer?
+    public var countDownSeconds: Int = 0
+    
     public override func draw(_ rect: CGRect) {
         layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderWidth
@@ -81,5 +84,41 @@ import UIKit
         self.titleEdgeInsets = titleInsets
         self.imageEdgeInsets = imageInsets
     }
+    
+    deinit {
+        stopTimer()
+    }
 }
 
+extension IBDesignableButton {
+    // MARK: 开始定时器
+    public func startCountDown(downTitle: String, resetTitle: String, seconds: Int) {
+        countDownSeconds = seconds
+        timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.global())
+        timer?.scheduleRepeating(deadline: DispatchTime.now(), interval: .seconds(1), leeway: .milliseconds(10))
+        
+        timer?.setEventHandler(handler: {
+            DispatchQueue.main.sync {
+                self.countDownSeconds -= 1
+                if self.countDownSeconds <= 0 {
+                    self.canSubmit = true
+                    self.stopTimer()
+                    
+                    self.setTitle(resetTitle, for: .normal)
+                } else {
+                    self.canSubmit = false
+                    self.setTitle("\(downTitle): \(self.countDownSeconds)", for: .normal)
+                }
+            }
+        })
+        timer?.resume()
+    }
+    
+    //MARK: 停止定时器
+    private func stopTimer() {
+        if timer != nil {
+            timer?.cancel()
+            timer = nil
+        }
+    }
+}
