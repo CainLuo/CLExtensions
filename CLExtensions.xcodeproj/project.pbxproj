@@ -107,9 +107,9 @@
 		BF1104C623F18F4100245B3C /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		BF1104CF23F1901C00245B3C /* UIKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		BF1104D123F1901C00245B3C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		BF5129A123FE2DF700DA3365 /* CLExtensions+Localize.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CLExtensions+Localize.podspec"; sourceTree = SOURCE_ROOT; };
-		BF5129A223FE2DF700DA3365 /* CLExtensions+Rx.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CLExtensions+Rx.podspec"; sourceTree = SOURCE_ROOT; };
-		BF5129A323FE2DF700DA3365 /* CLExtensions+Log.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CLExtensions+Log.podspec"; sourceTree = SOURCE_ROOT; };
+		BF5129A123FE2DF700DA3365 /* CLExtensions+Localize.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLExtensions+Localize.podspec"; sourceTree = SOURCE_ROOT; };
+		BF5129A223FE2DF700DA3365 /* CLExtensions+Rx.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLExtensions+Rx.podspec"; sourceTree = SOURCE_ROOT; };
+		BF5129A323FE2DF700DA3365 /* CLExtensions+Log.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLExtensions+Log.podspec"; sourceTree = SOURCE_ROOT; };
 		BF6639EA233DBD3D0049B4CF /* CLExtensions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CLExtensions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF663A1E233DBDE80049B4CF /* CLExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CLExtensions.podspec; sourceTree = SOURCE_ROOT; };
 		BF663A1F233DBDE80049B4CF /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = SOURCE_ROOT; };
@@ -691,7 +691,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIKit.CLExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -722,7 +722,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIKit.CLExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
