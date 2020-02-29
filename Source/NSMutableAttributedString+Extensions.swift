@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension NSMutableAttributedString {
     public static func drawImageInAttributedString(content: String, image: UIImage, bounds: CGRect, isPrefix: Bool = true) -> NSMutableAttributedString {
