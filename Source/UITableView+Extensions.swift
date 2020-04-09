@@ -31,4 +31,12 @@ extension UITableView {
     public func hideEmptyCells() {
         tableFooterView = UIView(frame: .zero)
     }
+    
+    public func scrollView(scrollView: UIScrollView, sectionHeight: CGFloat) {
+        if (scrollView.contentOffset.y <= sectionHeight) && (scrollView.contentOffset.y >= 0) {
+            scrollView.contentInset = UIEdgeInsets(top: -scrollView.contentOffset.y, left: 0, bottom: 0, right: 0)
+        } else if (scrollView.contentOffset.y >= sectionHeight) {
+            scrollView.contentInset = UIEdgeInsets(top: -sectionHeight, left: 0, bottom: 0, right: 0)
+        }
+    }
 }
