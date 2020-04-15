@@ -10,6 +10,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 import CLExtensions
+import CLExtensions_Rx
 
 protocol RxViewModelInputs {
     var textField: AnyObserver<String> { get }
