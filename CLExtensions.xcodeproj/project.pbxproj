@@ -51,6 +51,7 @@
 		BF1104CD23F18F4100245B3C /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1104C623F18F4100245B3C /* UIViewController+Rx.swift */; };
 		BF1104D223F1901C00245B3C /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1104CF23F1901C00245B3C /* UIKit+Extensions.swift */; };
 		BF1104D323F1901C00245B3C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1104D123F1901C00245B3C /* Logger.swift */; };
+		BF2E1351244C5A9E00C60C41 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2E1350244C5A9E00C60C41 /* NSObject+Extensions.swift */; };
 		BF5129A423FE2DF700DA3365 /* CLExtensions+Localize.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BF5129A123FE2DF700DA3365 /* CLExtensions+Localize.podspec */; };
 		BF5129A523FE2DF700DA3365 /* CLExtensions+Rx.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BF5129A223FE2DF700DA3365 /* CLExtensions+Rx.podspec */; };
 		BF5129A623FE2DF700DA3365 /* CLExtensions+Log.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BF5129A323FE2DF700DA3365 /* CLExtensions+Log.podspec */; };
@@ -107,6 +108,7 @@
 		BF1104C623F18F4100245B3C /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		BF1104CF23F1901C00245B3C /* UIKit+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit+Extensions.swift"; sourceTree = "<group>"; };
 		BF1104D123F1901C00245B3C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BF2E1350244C5A9E00C60C41 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		BF5129A123FE2DF700DA3365 /* CLExtensions+Localize.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLExtensions+Localize.podspec"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF5129A223FE2DF700DA3365 /* CLExtensions+Rx.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLExtensions+Rx.podspec"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF5129A323FE2DF700DA3365 /* CLExtensions+Log.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CLExtensions+Log.podspec"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -266,6 +268,7 @@
 				BF11048023F1489500245B3C /* UITextView+Extensions.swift */,
 				BF11047423F1489400245B3C /* UIView+Extensions.swift */,
 				BF11047B23F1489400245B3C /* UIViewController+Extensions.swift */,
+				BF2E1350244C5A9E00C60C41 /* NSObject+Extensions.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
@@ -467,6 +470,7 @@
 				BF11048723F1489500245B3C /* UITextFile+Extensions.swift in Sources */,
 				BF11048B23F1489500245B3C /* NSMutableAttributedString+Extensions.swift in Sources */,
 				BF11049223F1489500245B3C /* UIStackView+Extensions.swift in Sources */,
+				BF2E1351244C5A9E00C60C41 /* NSObject+Extensions.swift in Sources */,
 				BF11049923F1489500245B3C /* UIColor+Extensions.swift in Sources */,
 				BF1104D323F1901C00245B3C /* Logger.swift in Sources */,
 				BF11048A23F1489500245B3C /* UIApplication+Extensions.swift in Sources */,
@@ -678,7 +682,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 202004092249;
+				CURRENT_PROJECT_VERSION = 202004191809;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -692,7 +696,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIKit.CLExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -710,7 +714,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 202004092249;
+				CURRENT_PROJECT_VERSION = 202004191809;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -724,7 +728,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.3;
+				MARKETING_VERSION = 1.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.UIKit.CLExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
