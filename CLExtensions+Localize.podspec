@@ -7,20 +7,20 @@
 #
 
 Pod::Spec.new do |s|
-  s.name          = "CLExtensions+Localize"
-  s.version       = "1.1.3"
-  s.summary       = "Localize of CLExtensions."
-  s.homepage      = "https://github.com/CainLuo/CLExtensions"
-  s.license       = { :type => "MIT", :file => "LICENSE" }
-  s.author        = { "cainluo" => "350116542@qq.com" }
-  s.source        = { :git => "https://github.com/CainLuo/CLExtensions.git", :tag => "#{s.version}" }
+  s.name              = "CLExtensions+Localize"
+  s.version           = "1.1.4"
+  s.summary           = "Localize of CLExtensions."
+  s.homepage          = "https://github.com/CainLuo/CLExtensions"
+  s.license           = { :type => "MIT", :file => "LICENSE" }
+  s.author            = { "cainluo" => "350116542@qq.com" }
+  s.source            = { :git => "https://github.com/CainLuo/CLExtensions.git", :tag => "#{s.version}" }
   s.documentation_url = 'https://github.com/CainLuo/CLExtensions'
 
   s.source_files = 'CLExtensions+Localize/*.swift'
 
   s.ios.deployment_target = '10.0'
 
-  s.swift_versions = ['5.0', '5.1']
+  s.swift_versions = ['5.0', '5.1', '5.2']
 
   s.dependency 'Localize-Swift'
 end
